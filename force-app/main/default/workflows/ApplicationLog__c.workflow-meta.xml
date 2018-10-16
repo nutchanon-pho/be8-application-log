@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workflow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <alerts>
+        <fullName>Error_Email_Alert_on_Application_Log</fullName>
+        <ccEmails>nutchanon.p@beryl8.com</ccEmails>
+        <description>Error Email Alert on Application Log</description>
+        <protected>false</protected>
+        <recipients>
+            <type>owner</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>Application_Log/Error_Application_Log</template>
+    </alerts>
+    <rules>
+        <fullName>Email_Alert_on_Error</fullName>
+        <actions>
+            <name>Error_Email_Alert_on_Application_Log</name>
+            <type>Alert</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>ApplicationLog__c.DebugLevel__c</field>
+            <operation>equals</operation>
+            <value>Error</value>
+        </criteriaItems>
+        <description>This workflow will send an email alert to the specified email addresses when an error occurred as recorded by Application Logs.</description>
+        <triggerType>onCreateOnly</triggerType>
+    </rules>
+</Workflow>
