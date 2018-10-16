@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>DebugLevel__c</fullName>
+    <description>Debug Level of the Application Log which could be:
+Info - logged for additional information
+Debug - logged for debug purpose
+Warning - logged to capture problem in the system but is not regarded as an error
+Error - logged to capture problem in the system but is regarded as an error
+
+The Debug Level is controlled by a custom setting to dictate which Debug Level will be logged.</description>
+    <externalId>false</externalId>
+    <label>Debug Level</label>
+    <required>true</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Debug</fullName>
+                <default>false</default>
+                <label>Debug</label>
+            </value>
+            <value>
+                <fullName>Error</fullName>
+                <default>false</default>
+                <label>Error</label>
+            </value>
+            <value>
+                <fullName>Warning</fullName>
+                <default>false</default>
+                <label>Warning</label>
+            </value>
+            <value>
+                <fullName>Info</fullName>
+                <default>false</default>
+                <label>Info</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

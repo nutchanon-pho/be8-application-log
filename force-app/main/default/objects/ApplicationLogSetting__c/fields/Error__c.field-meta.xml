@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Error__c</fullName>
+    <defaultValue>true</defaultValue>
+    <description>Any error which is fatal to the operation, but not the service or application (can&#39;t open a required file, missing data, etc.). These errors will force user (administrator, or direct user) intervention. These are usually reserved (in my apps) for incorrect connection strings, missing services, etc.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Any error which is fatal to the operation, but not the service or application. These errors will force user (administrator, or direct user) intervention. These are usually reserved (in my apps) for incorrect connection strings, missing services, etc.</inlineHelpText>
+    <label>Error</label>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

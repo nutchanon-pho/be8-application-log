@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Debug__c</fullName>
+    <defaultValue>true</defaultValue>
+    <description>Information that is diagnostically helpful to people more than just developers (IT, sysadmins, etc.).</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Information that is diagnostically helpful to people more than just developers (IT, sysadmins, etc.).</inlineHelpText>
+    <label>Debug</label>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>
